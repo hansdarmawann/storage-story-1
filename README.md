@@ -8,6 +8,14 @@ Analysis Type: Exploratory Data Analysis (EDA)
 
 ---
 
+## PowerBI Visualization
+
+![Storage Story – Overview](visualizations/sample-1.jpg)
+
+![Storage Story – Overview](visualizations/sample-2.jpg)
+
+---
+
 ## Repository Structure
 
 ```
@@ -23,6 +31,8 @@ storage-story-1/
 ├── figures/                           # Generated static visualizations (PNG/SVG)
 │
 ├── visualizations/
+│   └── sample-1.jpg
+│   └── sample-2.jpg
 │   └── storage-story-1.pbix           # Power BI dashboard/report
 │
 ├── queries/
