@@ -3,7 +3,6 @@
 Language: Python
 Analysis Type: Exploratory Data Analysis (EDA)
 
-
 ## Overview
 
 This project presents an **Exploratory Data Analysis (EDA)** of anonymized personal media storage metadata. The objective is to understand **how personal media storage is consumed over time**, which media categories and formats contribute most to storage growth, and how these patterns evolve temporally.
@@ -11,31 +10,6 @@ This project presents an **Exploratory Data Analysis (EDA)** of anonymized perso
 The analysis is structured using the **Google Data Analytics Capstone framework**:
 **Ask → Prepare → Process → Analyze → Share → Act**.
 The project emphasizes analytical discipline, transparency, and reproducibility, avoiding unnecessary feature engineering beyond what is required for reliable exploratory insights.
-
----
-
-## Repository Structure
-
-```
-storage-story-1/
-│
-├── datasets/
-│   ├── files.csv                    # Raw dataset
-│   └── files_clean_engineered.csv   # Processed dataset
-│
-├── notebooks/
-│   └── notebook.ipynb               # Main EDA notebook
-│
-├── figures/                         # Generated visualizations
-│
-├── queries/
-│   └── get_data.sql                 # Data extraction query
-│
-├── environments/
-│   └── environment.yml              # Reproducible environment
-│
-└── README.md
-```
 
 ---
 
@@ -117,56 +91,27 @@ How is personal media storage consumed over time, what patterns and trends exist
 
 ### 4. Analyze
 
-* Descriptive statistics across original and engineered features
-* Category-level analysis by:
-
-  * File count distribution
-  * Total storage contribution
-* Temporal analysis of:
-
-  * File creation trends
-  * Storage growth over time
+* Performed descriptive statistics across original and engineered features
+* Analyzed file distribution by category and format using file counts
+* Analyzed storage contribution using aggregated file size metrics
+* Examined temporal trends in both file creation volume and total storage growth
 
 Reusable EDA visualization functions were developed to ensure consistency and reproducibility across analyses.
 
----
+### 5. Share
 
-## Key Analytical Insights (High-Level)
+* Synthesized analytical results into clear, stakeholder-oriented insights
+* Summarized dominant storage consumption patterns across categories, formats, and time
+* Highlighted contrasts between file count dominance and storage size dominance
+* Documented analytical limitations and assumptions affecting interpretation
 
-* Storage usage is not always aligned with file count dominance
-* Certain formats or categories contribute disproportionately to total storage
-* Long-term growth trends are observable at the yearly level
-* Temporal aggregation reveals patterns useful for capacity planning
+All insights presented in this phase are derived directly from outputs generated during the Analyze phase.
 
-*(Detailed insights are documented within the notebook.)*
+### 6. Act
 
----
+* Translated exploratory insights into high-level decision implications
+* Identified storage optimization opportunities informed by observed usage patterns
+* Outlined non-prescriptive recommendations for capacity planning and archival strategies
+* Defined future analytical extensions beyond the scope of the current EDA
 
-## Limitations & Assumptions
-
-* The dataset represents a **single anonymized user**, limiting generalizability
-* Analysis is based solely on **metadata**, not file content
-* File creation date may not always reflect the original capture date
-* Semantic correctness of categories and formats is assumed
-
-These limitations should be considered when extending the analysis or applying insights to broader contexts.
-
----
-
-## Reproducibility
-
-* All transformations are documented and non-destructive
-* Raw data is preserved separately from processed outputs
-* Environment dependencies are captured in `environment.yml`
-* Visual outputs are saved to disk for consistent reuse
-
----
-
-## Next Steps
-
-Potential extensions of this work include:
-
-* Storage growth forecasting
-* Cost modeling based on storage tiers
-* Automated archival or lifecycle management rules
-* Cross-user or multi-device comparative analysis
+This phase is intentionally forward-looking and does not introduce additional analysis or modeling.
