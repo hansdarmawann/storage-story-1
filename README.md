@@ -1,6 +1,9 @@
 # Storage Story: Exploratory Analysis of Personal Media Storage Metadata
+
 **by Hans Darmawan**
+
 Language: Python
+
 Analysis Type: Exploratory Data Analysis (EDA)
 
 ---
