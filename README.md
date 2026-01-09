@@ -3,6 +3,31 @@
 Language: Python
 Analysis Type: Exploratory Data Analysis (EDA)
 
+---
+
+## Repository Structure
+
+```
+storage-story-1/
+│
+├── datasets/
+│   ├── files.csv                    # Raw dataset
+│   └── files_clean_engineered.csv   # Processed dataset
+│
+├── notebooks/
+│   └── notebook.ipynb               # Main EDA notebook
+│
+├── figures/                         # Generated visualizations
+│
+├── queries/
+│   └── get_data.sql                 # Data extraction query
+│
+├── environments/
+│   └── environment.yml              # Reproducible environment
+│
+└── README.md
+```
+
 ## Overview
 
 This project presents an **Exploratory Data Analysis (EDA)** of anonymized personal media storage metadata. The objective is to understand **how personal media storage is consumed over time**, which media categories and formats contribute most to storage growth, and how these patterns evolve temporally.
